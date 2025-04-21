@@ -1,0 +1,387 @@
+/*button.php*/
+.sh_pack_button,
+.sh_pack_button_item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #0073aa;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none!important;
+  line-height: 1;
+  min-height: 48px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sh_pack_button:hover,
+.sh_pack_button_item:hover {
+  background: #005f8d;
+  text-decoration: none;
+}
+
+/* Sizes – πρέπει να χρησιμοποιούνται ΜΑΖΙ με το base class */
+.sh_pack_size_small {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.sh_pack_size_medium {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.sh_pack_size_large {
+  font-size: 16px;
+  padding: 14px 28px;
+}
+
+/*alert.php*/
+.sh_pack_alert {
+  padding: 15px;
+  border-left: 5px solid #0073aa;
+  background: #f0f8ff;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.sh_pack_alert_error {
+  border-color: #dc3232;
+  background: #ffeaea;
+}
+
+.sh_pack_alert_success {
+  border-color: #46b450;
+  background: #eaffea;
+}
+
+.sh_pack_alert_info {
+  border-color: #0073aa;
+  background: #f0f8ff;
+}
+
+/*badge.php*/
+.sh_pack_badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-family: sans-serif;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sh_pack_badge_rounded {
+  border-radius: 20px;
+}
+
+.sh_pack_badge_small {
+  font-size: 10px;
+  padding: 2px 8px;
+}
+
+.sh_pack_badge_medium {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.sh_pack_badge_large {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+
+/*box.php*/
+.sh_pack_box {
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #f4faff; /* fallback αν δεν δοθεί background */
+  color: #0366a1; /* fallback αν δεν δοθεί χρώμα */
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+}
+
+.sh_pack_box .sh_pack_box_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sh_pack_box .sh_pack_box_header .dashicons {
+  font-size: 26px;
+  margin-right: 10px;
+  color: inherit;
+}
+
+.sh_pack_box .sh_pack_box_header strong {
+  font-size: 18px;
+  color: inherit;
+  line-height: 1.2;
+}
+
+.sh_pack_box p {
+  margin: 0;
+  font-size: 14px;
+  color: inherit;
+}
+
+
+
+/*grid.php*/
+.sh_pack_grid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.sh_pack_column {
+  flex: 1;
+  min-width: 200px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.sh_pack_grid_cols_2 .sh_pack_column {
+  width: calc(50% - 10px);
+}
+
+.sh_pack_grid_cols_3 .sh_pack_column {
+  width: calc(33.333% - 13.33px);
+}
+
+.sh_pack_grid_cols_4 .sh_pack_column {
+  width: calc(25% - 15px);
+}
+
+@media screen and (max-width: 768px) {
+  .sh_pack_column {
+    width: 100% !important;
+  }
+}
+
+/*tabs.php*/
+.sh_pack_tabs_wrapper {
+  margin-top: 20px;
+}
+.sh_pack_tab_nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sh_pack_tab_button {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.sh_pack_tab_button.active {
+  background: #0073aa;
+  color: white;
+}
+.sh_pack_tab_content {
+  display: none;
+  padding: 15px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.sh_pack_tab_content.active {
+  display: block;
+}
+
+/*testimonial.php*/
+.sh_pack_testimonial {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 5px solid #0073aa;
+}
+
+.sh_pack_testimonial_avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sh_pack_testimonial_content {
+  flex: 1;
+}
+
+.sh_pack_testimonial_text {
+  font-style: italic;
+  margin: 0 0 10px;
+}
+
+.sh_pack_testimonial_author {
+  font-size: 14px;
+  color: #444;
+}
+
+/*countdown.php*/
+.sh_pack_countdown_wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sh_pack_countdown_label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/*progress.php*/
+.sh_pack_progress_wrapper {
+  margin-bottom: 20px;
+}
+
+.sh_pack_progress_label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sh_pack_progress_outer {
+  background: #eaeaea;
+  border-radius: 5px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.sh_pack_progress_inner {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.sh_pack_progress_percent {
+  text-align: right;
+  font-size: 12px;
+  color: #444;
+  margin-top: 4px;
+}
+
+/*pricing.php*/
+.sh_pack_pricing_card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.sh_pack_pricing_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sh_pack_pricing_price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.sh_pack_pricing_features {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.sh_pack_pricing_button {
+  background: #0073aa;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  text-decoration: none!important;
+}
+
+.sh_pack_pricing_button:hover {
+  background: #005f8d;
+}
+
+.sh_pack_pricing_features {
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+}
+
+/*button-group.php*/
+.sh_pack_button_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.align_left {
+  justify-content: flex-start;
+}
+.align_center {
+  justify-content: center;
+}
+.align_right {
+  justify-content: flex-end;
+}
+
+.sh_pack_button_item {
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+  text-decoration: none!important;
+}
+
+.sh_pack_button_item:hover {
+  filter: brightness(0.9);
+}
+
+/*toggle.php*/
+.sh_pack_toggle_button {
+  background-color: #eee;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.sh_pack_toggle_button:hover {
+  opacity: 0.9;
+}
+
+.sh_pack_toggle_panel {
+  padding: 0 20px;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+  border-left: 3px solid #0073aa;
+  margin-top: 0;
+  border-radius: 0 0 6px 6px;
+}
