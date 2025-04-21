@@ -43,7 +43,6 @@ Go to Shortcodes Pack from the WP Dashboard menu to explore and copy shortcodes
 
 🧰 Requirements
 WordPress 5.0+
-
 PHP 7.4+
 
 📌 Developer
